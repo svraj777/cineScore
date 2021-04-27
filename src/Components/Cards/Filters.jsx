@@ -27,11 +27,9 @@ function Filters(props) {
   const [Page, setPage] = React.useState("");
   const [Rate, setRate] = React.useState("");
   useEffect(() => {
-    console.log(Page, Rate);
     props.filtering(Page, Rate);
   }, [Page, Rate]);
   const handleChange = (event) => {
-    console.log(event.target.name);
     if (event.target.name === "Page") {
       setPage(event.target.value);
     }
@@ -99,7 +97,6 @@ function Filters(props) {
   );
 }
 const mapStateToProps = (state) => {
-  console.log(state);
   return { pages: state.movies.total_pages };
 };
 

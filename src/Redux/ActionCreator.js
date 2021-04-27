@@ -24,7 +24,6 @@ const getData = (movies) => {
 };
 
 const filtering = (page, rate) => (dispatch) => {
-  console.log(page, rate);
   dispatch(requestFilter());
   fetch(
     `https://api.themoviedb.org/3/discover/movie?api_key=923919edbccd880ec5f2e43756ffa1dc&language=en-US&sort_by=original_title.asc&include_adult=true&page=${

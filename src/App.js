@@ -8,7 +8,6 @@ import Error from "./Pages/Error";
 import { connect } from "react-redux";
 import Popup from "./Components/Common/Popup";
 const App = (props) => {
-  console.log(props.state.dataFilterError);
   return (
     <div style={{ padding: "25px", background: "#2f3238" }}>
       {props.state.dataFilterError ? (
