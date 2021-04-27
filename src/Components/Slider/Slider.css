@@ -1,0 +1,19 @@
+.sliderMain {
+  overflow: hidden;
+
+  padding: 10px;
+}
+.slick-slide img {
+  height: 200px;
+}
+.slick-initialized .slick-slide {
+  /* padding: 0 20px; */
+}
+/* the slides */
+.slick-slide {
+  margin: 0 10px;
+}
+/* the parent */
+/* .slick-list {
+  margin: 0 -10px;
+} */
